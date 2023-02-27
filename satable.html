@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="satable.css">
+    <style>
+        body{background-color: blue;}
+table{background-color: antiquewhite;
+width: 100%;
+height: 100px;
+table-layout: fixed;}
+table.usal{background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    }
+td{background-color: aqua;height: 100px;
+padding: 30px;}
+
+p+table{background-color: brown;}
+.right {
+    text-align: right;
+  }
+  td:target {text-decoration: underline;
+background-color: gold;}
+  a{color: #21616b;
+     }
+background-color: beige;}
+a:link{background-color: red;}
+a:visited{background-color: chartreuse;}
+a:hover{background-color: fuchsia;font-size: 2em;font-weight: 900;font-style: italic;}
+a:active{color: blue;
+p{padding: 10px;}
+    </style>
+</head>
+<body>
+    <p> <a href="#here">здесь конец таблицы</a></p> 
+    <table class="usal">
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos iure, ipsum eum nobis voluptatem perspiciatis, facilis ullam temporibus, atque non debitis reiciendis suscipit corporis. Sed possimus officiis impedit quaerat illum!</td><td>3</td></tr>
+    </table>
+   <p></p>
+    <table>
+        <tr><td class="right">1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>1</td><td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos iure, ipsum eum nobis voluptatem perspiciatis, facilis ullam temporibus, atque non debitis reiciendis suscipit corporis. Sed possimus officiis impedit quaerat illum!</td><td id="here">3</td></tr>
+    </table>
+   
+</body>
+</html>

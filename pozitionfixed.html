@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Фиксированное позиционирование.</title>
+<style>
+   h1 {
+color: #800;
+text-align: center;
+font-size:30px
+}
+h2 {
+color: rgb(172, 246, 246);
+text-align: center;
+font-size:18px
+}
+div.blok1 {
+background-image: url(light.jpg);
+border: #000 2px solid;
+padding: 5px;
+width: 800px;
+height: 4000px
+}
+div.blok2 {
+position: fixed;
+left: 250px;
+top: 300px;
+border: rgb(225, 241, 225) 60px double;
+padding: 5px;
+width: 300px
+}
+
+
+</style>
+</head>
+<body>
+<div class="blok1">
+<h1>Какая то страничка</h1>
+</div>
+<div class="blok2">
+<h2>Фиксированный блок с навязчивой рекламой</h2>
+<h1>Купи слона!!</h1>
+Фиксированный блок, выведен из общего потока элементов, при прокручивании страницы он не меняет своего положения. Ранние версии браузера Internet Explorer игнорируют данное свойство.
+</div>
+</body>
+</html>

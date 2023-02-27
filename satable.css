@@ -1,0 +1,23 @@
+body{background-color: blue;}
+table{background-color: antiquewhite;
+width: 100%;
+height: 100px;
+table-layout: fixed;}
+table.usal{background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+    }
+td{background-color: aqua;}
+
+p+table{background-color: brown;}
+.right {
+    text-align: right;
+  }
+  td:target {text-decoration: underline;
+background-color: gold;}
+  a{color: #000;}
+  a:active{color: blue;
+background-color: beige;}
+a:link{background-color: red;}
+a:visited{background-color: chartreuse;}
+p{padding: 100px;}
