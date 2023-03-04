@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>z-index</title>
+<style type="text/css">
+body {background-color: #c5ffa0;cursor: cell;}
+a {
+position: absolute;
+z-index: auto;
+top: 100px;
+border: #000000 1px solid;
+}
+a:hover {
+position: absolute;
+z-index:1;
+top: 80px;
+border: #800000 1px solid;
+}
+.red{background-color: red; width: 300px;height: 300px;cursor: help;}
+.blue{background-color: blue; width: 300px;height: 300px;cursor: progress;}
+.green{background-color: green; width: 300px;height: 300px;cursor: row-resize;}
+.pink{background-color: pink; width: 300px;height: 300px;cursor: crosshair;}
+.yellow{background-color: yellow; width: 300px;height: 300px;cursor: move;}
+.plum{background-color: plum; width: 300px;height: 300px;cursor: zoom-out;}
+</style>
+</head>
+<body>
+   <h2>Проведите курсором по картам</h2>
+
+<a href="#" style="left: 10px"><div class="red"></div></a>
+<a href="#" style="left: 50px"><div class="blue"></div></a>
+<a href="#" style="left: 90px"><div class="green"></div></a>
+<a href="#" style="left: 130px"><div class="pink"></div></a>
+<a href="#" style="left: 170px"><div class="yellow"></div></a>
+<a href="#" style="left: 210px"><div class="plum"></div></a>
+ <p style="position: absolute; left: 10px; top: 400px;">В злосчастном IE6, в отличии от других браузеров, псевдокласс <b>:hover</b> работает только для ссылок, поэтому в качестве контейнера для рисунков/карт использую никуда не ведущую ссылку. (<b>a href="#"</b>)</p>
+<p style="position: absolute; left: 10px; top: 500px;">Впрочем, IE можно "надурить" используя скрипты, просто не хочу лишний раз выходить за рамки обучения CSS.</p>
+</body>
+</html>

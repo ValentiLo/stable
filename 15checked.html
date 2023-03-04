@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заголовок документа</title>
+    <style>
+      table,tr,th,td{
+      border:1px solid #ccc;
+      text-align:center;
+      border-collapse:collapse;
+      padding:8px;
+      }
+      #toggle {
+      display: none;
+      }
+      .expandable {
+      visibility: collapse;
+      background: #1c87c9;
+      }
+      #btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #8ebf42;
+      color: #fff;
+      cursor:pointer;
+      border-radius: 3px;
+      }
+      #toggle:checked ~ * .expandable {
+      visibility: visible;
+      }
+      #toggle:checked ~ #btn {
+      background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Пример селектора ::checked</h2>
+    <input type="checkbox" id="toggle" />
+    <table>
+      <thead>
+        <tr>
+          <th>Колонка 1</th>
+          <th>Колонка 2</th>
+          <th>Колонка 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="expandable">
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+        </tr>
+        <tr>
+          <td>[Текст]</td>
+          <td>[Текст]</td>
+          <td>[Текст]</td>
+        </tr>
+        <tr class="expandable">
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+        </tr>
+        <tr>
+          <td>[Текст]</td>
+          <td>[Текст]</td>
+          <td>[Текст]</td>
+        </tr>
+        <tr class="expandable">
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+          <td>[Больше текста]</td>
+        </tr>
+      </tbody>
+    </table>
+    <label for="toggle" id="btn">Нажмите сюда!</label>
+  </body>
+</html>

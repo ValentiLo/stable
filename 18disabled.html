@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Заголовок документа</title>
+    <style> 
+      input{
+      padding:2px 5px;
+      margin-bottom:10px;
+      border:1px solid #ccc;
+      }
+      input[type=text]:enabled {
+      background: #eee;
+      }
+      input[type=text]:disabled {
+      background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Пример селектора :disabled</h2>
+    <form action="">
+      <label for="name">First name:</label> 
+      <input type="text" value="John" id="name"><br>
+      <label for="lastname">Last name:</label> 
+      <input type="text" value="Smith" id="lastname"><br>
+      <label for="country"l>Country:</label> 
+      <input type="text" disabled="disabled" value="10 High Street" id="conutry">
+    </form>
+  </body>
+</html>
