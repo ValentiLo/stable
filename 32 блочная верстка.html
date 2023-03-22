@@ -1,0 +1,47 @@
+<style type="text/css">/* для блока 1 - шапка */
+    #shapka{
+      text-align: left; /* Выравнивание внутреннего контента по левому краю */
+      width: 750px; /* Ширина блока и общая ширина*/
+      background: #900000; /* Цвет фона */
+      height: 50px; /* Высота блока */
+      margin-right: auto; /* Авто-отступ справа */
+      margin-left: auto; /* Авто-отступ слева */
+      padding: 10px; /* Внутренние поля вокруг содержимого */
+    }/* для контейнера */
+    #container {
+      width: 770px; /* Ширина слоя или ширина макета+20px */
+      margin-right: auto; /* Авто-отступ справа */
+      margin-left: auto; /* Авто-отступ слева */
+     }/* для блока 2 - меню */
+    #menu {
+      width: 200px; /* Ширина слоя */ 
+      float: left; /* Обтекание с соседним слоем */ 
+      color: white; /* Цвет текста */
+      background: #008080; /* Цвет фона */
+      padding: 10px; /* Внутренние поля вокруг содержимого */
+     }/* для блока 3 - контент */
+    #content { /* Правая колонка*/ 
+        width: 530px; /* Ширина слоя */ 
+        float: left; /* Обтекание с соседним слоем */ 
+        padding: 10px; /* Внутренние поля вокруг содержимого */ 
+        background: #e0e0e0; /* Цвет заднего фона */  
+       } /* для блока 4 - подвал */
+    #bottom{
+            width:750px; /* Ширина слоя */ 
+            clear:left; /* возвращаем блочность и располагаем слой слева */
+            padding: 10px; /* Внутренние поля вокруг содержимого */
+            background:#444;
+            color:#fff;
+            margin-right: auto; /* Авто-отступ справа */
+        margin-left: auto; /* Авто-отступ слева */
+    }</style>
+    </head> 
+    <body>
+    <div id="shapka">1</div>
+    <div id="container">
+            <div id="menu">2</div>
+            <div id="content">3</div>
+    </div>
+    <div id="bottom">4</div>
+    </body>
+    
