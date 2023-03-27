@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        <style>
+  /* контейнер */
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;background-color: chartreuse;
+  }
+
+  /* flex-контейнер */
+  .row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;background-color: aqua;
+  }
+
+  /* общие настройки для flex-элементов */
+  .col{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;background-color: bisque;
+  }
+
+  /* ширина блоков .col__article и .col__aside по умолчанию */
+  .col__article,
+  .col__aside{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;background-color: blue;
+  }
+
+  /* ширина блоков .col__article и .col__aside для больших экранов */
+  @media (min-width: 992px) {
+    /* 2/3 от ширины контейнера */
+    .col__article{
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+
+    /* 1/3 от ширины контейнера */
+    .col__aside{
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;background-color: brown;
+    }
+  }
+</style>
+
+    </style>
+</head>
+<body>
+    <header class="container">Lorem ipsum dolor sit amet.
+        <!-- Шапка страницы -->
+      </header>
+      <main class="container">
+        <div class="row">
+          <article class="col col__article">
+            <!-- Основная часть --> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, omnis exercitationem veritatis maxime harum numquam enim fuga id libero fugit distinctio inventore quidem, est vero odit, assumenda voluptate hic explicabo.
+          </article>
+          <aside class="col col__aside">
+            !-- Боковая область --
+          </aside>
+        </div>
+      </main>
+      <footer class="container">
+        -- Футер --
+      </footer>      
+</body>
+</html>
