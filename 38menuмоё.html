@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;list-style: none;text-decoration: none;}
+    body{height: 100vh;background: url(light.jpg) no-repeat;background-size: cover
+        ;background-position: center;}
+        header{position: fixed;top: 0;left: 0;right: 0;background: #fff;display: flex;justify-content: space-between;align-items: center;padding: 0 8%}
+        a.logo{font-size: 40px;font-weight: 900;color: #000;transition: 0.5s;}
+        a.logo:hover{transform: scale(1.8);}
+        header nav ul li{position: relative;float: left;text-transform: uppercase;}
+        header nav ul li a{padding: 15px;display: block;}
+        header nav ul li a:hover{background: #000;color:white;}
+        nav ul li ul{position: absolute;
+            left: 0;width: 120px;
+            background: #fff;display: none;
+        }
+        nav ul li:hover>ul{display: initial;}
+        nav ul li ul li{width: 100%;border: 1px solid rgb(0, 0, 0,.1);}
+        nav ul li ul li ul{left: 120px;top: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">мкт</a>
+        <nav>
+            <ul>
+                <li><a href="#">главная</a></li>
+                <li><a href="#">мои работы</a></li>
+                <li><a href="#">темы</a>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a>
+                    <UL>
+                        <li><a href="#">теория</a></li>
+                        <li><a href="#">работы</a></li>
+                    </UL>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
